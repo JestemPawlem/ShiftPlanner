@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>resources/icons/add.svg</file>
+        <file>resources/icons/arrow_dropdown_down.svg</file>
+        <file>resources/icons/arrow_dropdown_up.svg</file>
+        <file>resources/icons/check.svg</file>
+        <file>resources/icons/edit.svg</file>
+        <file>resources/icons/employee_add.svg</file>
+        <file>resources/icons/employee_edit.svg</file>
+        <file>resources/icons/employee_remove.svg</file>
+        <file>resources/icons/remove.svg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resources/styles/style.qss</file>
+    </qresource>
+</RCC>

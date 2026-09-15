@@ -1,0 +1,22 @@
+# CMake
+build/
+out/
+bin/
+
+# Visual Studio
+.vs/
+CMakeUserPresets.json
+
+# Qt Auto-generated files
+ui_*.h
+moc_*.cpp
+*.moc
+qrc_*.cpp
+
+# Binaries & Symbols
+*.exe
+*.dll
+*.obj
+*.lib
+*.pdb
+*.ilk

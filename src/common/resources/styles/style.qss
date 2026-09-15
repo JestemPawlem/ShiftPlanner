@@ -1,0 +1,422 @@
+﻿MainWindow, QDialog {
+    background-color: qlineargradient(spread:pad, x1:0.009, y1:1, x2:1, y2:0, stop:0 rgba(9, 0, 53, 255), stop:1 rgba(49, 50, 89, 255));
+}
+
+QPushButton {
+    min-width: 100px;
+    max-width: 110px;
+    min-height: 28px;
+    max-height: 28px;
+    padding: 2px 10px;
+    background-color: rgba(35, 32, 75, 200);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    color: #e0e0f0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+QPushButton:hover {
+    background-color: rgba(55, 60, 150, 220);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+}
+
+QPushButton:pressed {
+    background-color: rgb(45, 48, 125);
+}
+
+QWidget[class="container"] {
+    background-color: rgba(20, 18, 48, 180);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
+QLineEdit, QTimeEdit, QDateEdit {
+    color: #f1f5f9;
+    background-color: rgba(15, 12, 38, 200);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-height: 26px;
+    max-height: 26px;
+    padding-left: 8px;
+    padding-right: 8px;
+    selection-background-color: rgba(75, 85, 200, 240);
+    selection-color: #ffffff;
+}
+
+QLineEdit:focus, QTimeEdit:focus, QDateEdit:focus {
+    background-color: rgba(24, 20, 56, 230);
+    border: 1px solid rgba(100, 110, 240, 0.7);
+}
+
+QLineEdit[error="true"] {
+    background-color: rgba(80, 20, 30, 220);
+    border: 1px solid rgba(240, 80, 100, 0.8);
+    color: #ffccd0;
+}
+
+QLineEdit:disabled, QTimeEdit:disabled, QDateEdit:disabled {
+    background-color: rgba(20, 18, 48, 100);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: rgba(220, 220, 240, 70);
+}
+
+QTimeEdit::up-button, QTimeEdit::down-button,
+QDateEdit::up-button, QDateEdit::down-button {
+    width: 0px;
+    border: none;
+    background: transparent;
+}
+
+QLabel[class="form-label"] {
+    color: rgba(220, 220, 240, 0.85);
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    background: transparent;
+}
+
+QLabel[class="form-label"]:disabled {
+    color: rgba(220, 220, 240, 0.35);
+}
+
+QLabel[class="message-label"] {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
+
+QLabel[class="error-label"] {
+    color: #f87171;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    background: transparent;
+}
+
+QComboBox {
+    color: #f1f5f9;
+    background-color: rgba(15, 12, 38, 200);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    min-height: 26px;
+    max-height: 26px;
+}
+
+QComboBox:hover {
+    background-color: rgba(24, 20, 56, 230);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+QComboBox:on, QComboBox:focus {
+    background-color: rgba(24, 20, 56, 230);
+    border: 1px solid rgba(100, 110, 240, 0.7);
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+    background: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(":/icons/resources/icons/arrow_dropdown_down.svg");
+    width: 20px;
+    height: 20px;
+}
+
+QComboBox::down-arrow:on {
+    image: url(":/icons/resources/icons/arrow_dropdown_up.svg");
+}
+
+QComboBox QAbstractItemView {
+    outline: none;
+    background-color: rgb(24, 20, 56);
+}
+
+QComboBox QAbstractItemView::item {
+    padding-left: 5px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgba(43, 47, 121, 140);
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: rgb(55, 60, 150);
+}
+
+
+
+QPushButton[class="tab-button"] {
+    min-width: 110px;
+    max-width: 110px;
+    min-height: 28px;
+    max-height: 28px;
+    background-color: rgba(24, 21, 56, 180);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    color: rgba(200, 200, 220, 160);
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    padding: 0px;
+}
+
+QPushButton[class="tab-button"]:hover:!checked {
+    background-color: rgba(35, 32, 75, 220);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+QPushButton[class="tab-button"]:checked {
+    background-color: rgb(55, 60, 150);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+
+
+QLabel[class="schedule-title"] {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QLabel[class="schedule-subtitle"] {
+    color: rgba(180, 185, 215, 0.7);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    padding: 0px;
+}
+
+
+
+QListView[class="item-list"] {
+    background-color: rgba(20, 18, 48, 180);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #e0e0f0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+}
+
+QListView[class="item-list"]::item {
+    height: 32px;
+    margin: 4px 4px 0px 4px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+QListView[class="item-list"]::item:hover {
+    background-color: rgba(43, 47, 121, 140);
+    color: #ffffff;
+}
+
+QListView[class="item-list"]::item:selected {
+    background-color: rgb(55, 60, 150);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QListView[class="item-list"] > QScrollBar::add-line:vertical, 
+QListView[class="item-list"] > QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QListView[class="item-list"] > QLineEdit {
+    background-color: rgb(55, 60, 150);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 0px;
+    max-height: none;
+    selection-background-color: rgba(75, 85, 200, 240);
+    selection-color: #ffffff;
+}
+
+
+
+QTableView[class="schedule-grid"] {
+    background-color: rgba(28, 25, 66, 220);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+QTableView[class="schedule-grid"] > QHeaderView {
+    background-color: transparent;
+}
+
+QTableView[class="schedule-grid"] > QTableCornerButton::section {
+    background-color: rgba(28, 25, 66, 220);
+    border: none;
+    border-radius: 0px;
+}
+
+QTableView[class="schedule-grid"] > QLineEdit {
+    background-color: rgb(55, 60, 150);
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 0px;
+    padding: 0px;
+    margin: 1px;
+}
+
+
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea > QWidget > QWidget {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 20px;
+    margin: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: rgba(100, 105, 196, 70);
+    min-width: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: rgba(100, 105, 196, 120);
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 20px;
+    margin: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: rgba(100, 105, 196, 70);
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: rgba(100, 105, 196, 120);
+}
+
+QScrollBar::add-line, QScrollBar::sub-line,
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+
+
+QMenuBar {
+    background-color: rgb(25, 22, 48);
+    border: none;
+    color: rgba(220, 220, 240, 0.85);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 2px 1px;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(55, 60, 150, 0.5);
+    color: #ffffff;
+}
+
+QMenuBar::item:pressed {
+    background-color: rgb(55, 60, 150);
+    color: #ffffff;
+}
+
+QMenuBar::item:disabled {
+    color: rgba(220, 220, 240, 0.3);
+    background-color: transparent;
+}
+
+QMenu {
+    background-color: rgb(24, 20, 56);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 4px;
+    color: #e0e0f0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+QMenu::item {
+    padding: 4px 24px 4px 12px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: rgb(55, 60, 150);
+    color: #ffffff;
+}
+
+QMenu::item:disabled {
+    color: rgba(224, 224, 240, 0.35);
+    background-color: transparent;
+}
+
+QMenu::item:disabled:selected {
+    background-color: transparent;
+    color: rgba(224, 224, 240, 0.35);
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 4px 6px;
+}
