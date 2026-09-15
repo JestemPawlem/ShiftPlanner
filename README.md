@@ -7,5 +7,8 @@ A desktop shift scheduling application built with **CMake**, **C++23** and **Qt6
 ## Screenshot
 
 <div align="center">
-  <img src="screenshots/main_view.png" alt="ShiftPlanner View" width="100%" />
+  <img src="screenshots/main_view_employees.png" alt="ShiftPlanner Employees" width="100%" />
+</div>
+<div align="center">
+  <img src="screenshots/main_view_schedule_entries.png" alt="ShiftPlanner Schedule Entries" width="100%" />
 </div>
